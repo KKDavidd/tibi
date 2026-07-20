@@ -51,28 +51,6 @@ $('#loginForm').addEventListener('submit', function (e) {
     });
 });
 
-$('#forgotBtn').addEventListener('click', function () {
-  const email = $('#li-email').value.trim();
-  const err = $('#loginError');
-  const note = $('#loginNote');
-  err.classList.remove('show');
-  note.classList.remove('show');
-  if (!email) {
-    err.textContent = 'Írja be az e-mail címét a jelszó-emlékeztetőhöz.';
-    err.classList.add('show');
-    return;
-  }
-  auth.sendPasswordResetEmail(email)
-    .then(function () {
-      note.textContent = 'Elküldtük a jelszó-visszaállító e-mailt, ha létezik ilyen fiók.';
-      note.classList.add('show');
-    })
-    .catch(function () {
-      note.textContent = 'Elküldtük a jelszó-visszaállító e-mailt, ha létezik ilyen fiók.';
-      note.classList.add('show');
-    });
-});
-
 $('#logoutBtn').addEventListener('click', function () {
   auth.signOut();
 });

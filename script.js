@@ -80,12 +80,13 @@ document.addEventListener('DOMContentLoaded', function () {
       var telInput = form.querySelector('input[type="tel"]');
       var msgInput = form.querySelector('textarea');
 
+      var pagePath = window.location.pathname.split('/').pop();
       var lead = {
         name: nameInput ? nameInput.value.trim() : '',
         email: emailInput ? emailInput.value.trim() : '',
         phone: telInput ? telInput.value.trim() : '',
         message: msgInput ? msgInput.value.trim() : '',
-        source: window.location.pathname.split('/').pop() || 'ismeretlen oldal',
+        source: pagePath ? pagePath : 'fooldal',
         status: 'new'
       };
 

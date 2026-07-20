@@ -41,13 +41,10 @@ body.admin-body{
 }
 .login-btn:hover{background:var(--red-dark);}
 .login-btn:disabled{opacity:.6;cursor:default;}
-.login-forgot{display:inline-block;margin-top:14px;font-size:.85rem;color:var(--steel);text-decoration:underline;cursor:pointer;background:none;border:0;padding:0;}
 .login-error{
   margin-top:14px;background:#fbeaea;border:1px solid #e2b4b4;color:#7d0000;padding:10px 12px;font-size:.85rem;display:none;
 }
 .login-error.show{display:block;}
-.login-note{margin-top:10px;background:#eaf3ea;border:1px solid #b9d6b9;color:#245c24;padding:10px 12px;font-size:.85rem;display:none;}
-.login-note.show{display:block;}
 
 .admin-shell{display:none;min-height:100vh;}
 .admin-shell.show{display:flex;}

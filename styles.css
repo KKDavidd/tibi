@@ -76,6 +76,7 @@ p{margin:0 0 1em;}
 .logo .l1{font-size:1.5rem;font-weight:700;letter-spacing:.04em;}
 .logo .l2{font-size:.62rem;color:var(--red);letter-spacing:.3em;margin-top:3px;}
 .logo-img{height:46px;width:auto;display:block;}
+.logo-icon{display:none;}
 
 nav.main-nav{display:flex;align-items:center;gap:2px;}
 nav.main-nav > ul{display:flex;align-items:center;}
@@ -128,6 +129,7 @@ nav.main-nav a.nav-link.active{color:var(--white);border-bottom-color:var(--red)
   background:var(--ink);color:var(--white);
   padding:90px 0 70px;
 }
+.hero .container{position:relative;z-index:2;}
 .hero .eyebrow{
   color:var(--red);font-family:var(--f-display);
   letter-spacing:.25em;font-size:.78rem;text-transform:uppercase;
@@ -153,7 +155,7 @@ nav.main-nav a.nav-link.active{color:var(--white);border-bottom-color:var(--red)
 .btn-outline:hover{border-color:var(--white);}
 
 .louvre-anim{
-  position:absolute;right:-40px;top:0;bottom:0;width:340px;
+  position:absolute;right:-40px;top:0;bottom:0;width:340px;z-index:1;
   display:flex;flex-direction:column;justify-content:center;gap:6px;
   opacity:.9;pointer-events:none;
 }
@@ -399,5 +401,7 @@ footer.site-footer{background:var(--ink);color:#cfc7b8;padding:52px 0 26px;}
   .footer-top{flex-direction:column;}
   .about-hero{gap:30px;}
   .footer-cols{gap:32px;}
-  .logo-img{height:38px;}
+  .logo-full{display:none;}
+  .logo-icon{display:block;height:40px;}
+  .louvre-anim{width:110px;right:-30px;opacity:.35;}
 }

@@ -65,8 +65,9 @@ nyilvános menüből — csak azok érik el, akik ismerik a pontos címét
   feltöltése (vagy URL megadása), majd Mentés. A publikus `galeria.html` oldal ezt
   azonnal megjeleníti.
 
-## Megjegyzés a jelszó-emlékeztetőhöz
+## Megjegyzés a jelszó-visszaállításhoz
 
-Az admin bejelentkezési oldalon az "Elfelejtett jelszó" gomb a Firebase Auth beépített
-jelszó-visszaállító e-mail küldő funkcióját használja — ehhez nincs szükség további
-beállításra, automatikusan működik, amint az Auth engedélyezve van.
+Az admin bejelentkezési oldalon nincs "Elfelejtett jelszó" gomb. Ha egy admin
+elfelejti a jelszavát, a jelszót a Firebase konzolon lehet visszaállítani:
+**Authentication → Users** → a felhasználó melletti menüben **Reset password**
+(vagy egyszerűen törölj és hozz létre újra egy fiókot ugyanazzal az e-mail címmel).
