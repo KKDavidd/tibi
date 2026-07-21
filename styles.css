@@ -332,6 +332,16 @@ section{padding:70px 0;}
 .video-card p{color:#c7bfb1;font-size:.88rem;margin:0;}
 
 .about-hero{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center;}
+
+/* Responsive two-column panels (product intro / contact sections).
+   Use instead of inline grid-template-columns so they collapse to one
+   column on mobile like every other grid on the site. */
+.grid-split{grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+.grid-split.contact-split{grid-template-columns:1fr 1.2fr;gap:56px;align-items:start;}
+.grid-split.lead-split{grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+@media(max-width:900px){
+  .grid-split{grid-template-columns:1fr!important;gap:32px!important;}
+}
 .portrait{
   aspect-ratio:3/4;background:linear-gradient(160deg,#5b544a,#2a2622);
   position:relative;overflow:hidden;
